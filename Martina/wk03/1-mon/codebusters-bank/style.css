@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://i.pinimg.com/originals/ea/ab/69/eaab69d64f31052d493391a92f08501b.jpg')
+}
+header h1 {
+    text-align: center;
+    padding: 30px 0 0 0;
+    font-family: 'Bangers', cursive;
+    font-size: 80px;
+    color: black;
+}
+
+
+div {
+    display: inline-block;
+    margin: 0 20px 0 20px;
+    background-color: white;
+}
+
+main {
+    text-align: center;
+}
+
+.savings-box {
+    border: 5px solid black;
+    width: 40%;
+    height: 340px;
+    padding: 10px 0 20px 0;
+    text-align: center;
+    background-color: red;
+}
+
+.checking-box {
+    border: 5px solid black;
+    width: 40%;
+    height: 340px;
+    padding: 10px 0 20px 0;
+    text-align: center;
+    background-color: red;
+}
+
+.block1 {
+    display: block;
+    background-color: red;
+    margin-top: 10px; 
+}
+
+.block2 {
+    display: block;
+    background-color: red;
+    margin-top: 10px;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.num1 {
+    width: 40%;
+    height: 40px;
+}
+
+.num2 {
+    width: 40%;
+    height: 40px;
+}
+
+.withdraw1 {
+    height: 30px;
+    border-radius: 35px;
+}
+
+.deposit1 {
+    height: 30px;
+    border-radius: 35px;
+}
+
+.withdraw2 {
+    height: 30px;
+    border-radius: 35px;
+}
+
+.deposit2 {
+    height: 30px;
+    border-radius: 35px;
+}
+
+.result1 {
+    width: 30%;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+}
+
+.result2 {
+    width: 30%;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+}
