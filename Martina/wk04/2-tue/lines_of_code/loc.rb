@@ -11,6 +11,9 @@
 # $ Enter filename: data.txt
 # $ 3 line(s)
 
+puts 'which file are the animals listed in?'
 gets.chomp.to_s
+
+
 readlines
 
