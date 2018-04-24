@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.container {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+}
+    
+main {
+    background-color: pink;
+    width: 30%;
+    padding: 10px;
+    margin: 0 auto;
+
+}
+
+aside {
+    background-color:lightblue;
+    width: 30%;
+    padding: 10px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;    
+}

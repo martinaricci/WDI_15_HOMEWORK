@@ -1,0 +1,44 @@
+/* * {
+    box-sizing: border-box;
+} */
+
+.background img {
+    width: 260px;
+    float: left;
+    
+}
+
+main {
+    border: 10px solid white;
+    width: 700px; 
+    padding: 40px;
+    background-color: white;
+}
+
+main > img {
+    width: 400px;
+}
+
+.sidesection {
+    border: 5px solid black;
+    width: 200px;
+    position: relative;
+    margin-left: 750px;
+    background-color: white;
+} 
+
+header {
+    position: relative;
+    z-index: 2;
+    margin: auto;
+}
+
+.container {
+    background-color: lightgray;
+}
+
+.sidesection p {
+    font-weight: bold;
+    font-size: 12px;
+}
+
