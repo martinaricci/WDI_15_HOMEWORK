@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form class="search-form" action="">
+        <input class="query-input" type="text">
+        <button>search</button>
+    </form>
+
+    <div class="result"></div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+    <script>
+    var $searchForm = $('.search-form'); 
+    var $queryInput = $('.query-input'); 
+    var $resultsDiv = $('.result');
+
+    $searchForm.on('submit', function(event){
+        event.preventDefault();
+        // console.log( $queryInput.val() );
+
+        var options = {
+            url: 'https://api.giphy.com/v1/gifs/search?api_key=zf1gNO6EPhucQkF7tfLAw9MtcujM7EZS&q=' + $queryInput.val() + '&limit=25&offset=0&rating=G&lang=en'
+        }
+
+        var showResults = function(res) {
+            // res.data.forEach(function(images) {
+            // console.log(images)
+            var giphyData = res['data']; // collection of objects
+            var embedUrls = [] // declare an empty array
+
+            console.log(giphyData);
+            for (var i = 0; i < 10; i++) {
+                console.log(giphyData[i]['embed_url'])
+                embedUrls.push(giphyData[i]['embed_url'])
+            }
+
+            console.log(embedUrls);
+            for (var i = 0; i < 10; i++) {
+                var newImgTag = $("<embed>"); 
+                // var p = ('<p>')
+                newImgTag.attr("src", embedUrls[i]); 
+                $resultsDiv.append(newImgTag); 
+                };
+            }
+
+        $.ajax(options).done(showResults)
+    });
+
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js">
+    </script>
+</body>
+</html>
